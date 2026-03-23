@@ -37,6 +37,8 @@ export class App implements OnInit {
     this.isLoaded = false;
     setTimeout(() => {
      this.isLoaded = true; 
+     window.scroll({top: 0})
+
     });
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
