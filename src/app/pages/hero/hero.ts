@@ -118,7 +118,7 @@ export class Hero implements AfterViewInit, OnInit, OnDestroy {
   }
 
   setbgPositionAndScroll() {
-    const factorScx = window.innerWidth < 768 ? 0.75 : 0.3;
+    const factorScx = 0.8;
     let y =  0;
     if (window.scrollY > 300) {
       // subtract start point so it starts from 0 smoothly
