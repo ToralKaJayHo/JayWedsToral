@@ -107,7 +107,105 @@
 <div #eventsTemp class="events-container">
     <div class="photo-frame-up photo-frame-down"></div>
 
-    <div class="fade-in" [ngClass]="{'show': !isparrallaxVisible}">
+    <div class="container" *ngIf="gujLang === selectedlanguage">
+        <div class="row my-3">
+            <div class="col-sm-4">
+                <h5>{{ i18nLabels.shreeGaneshayNamah | translate }}</h5>
+            </div>
+            <div class="col-sm-4">
+                <h5>{{ i18nLabels.jayShreeKrishna | translate }}</h5>
+            </div>
+            <div class="col-sm-4">
+                <h5>{{ i18nLabels.shreePithadMaa | translate }}</h5>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-12">
+                <h6>{{ i18nLabels.riddhiSiddhiSahit | translate }}</h6>
+                <h6>{{ i18nLabels.sahkutumbPadharjo | translate }}</h6>
+
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-12">
+                <h2>{{ i18nLabels.manglikPrasango | translate }}</h2>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-12">
+                <h5 class="border-box" [innerHTML]="i18nLabels.savant208230AprNaRoj | translate" ></h5>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-3 ">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.randalMaaPooja | translate }}</h5>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.ganeshSthapna | translate }}</h5>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.mandapMuhrat | translate }}</h5>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.svaruvhiPhojan | translate }}</h5>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.mameru | translate }}</h5>
+            </div>
+            
+            <div class="col-sm-4">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.haldiPithi | translate }}</h5>
+            </div>
+            
+            <div class="col-sm-4">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.sangeetSandhya | translate }}</h5>
+            </div>
+        </div>
+        
+        <div class="row my-3">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="border-box pre-line-text">
+                    <h4>{{ i18nLabels.shubhSthalSaiMandirHall | translate }}</h4>
+                    <a class="u my-1" href="https://maps.app.goo.gl/6JBR1KTp78MwkyEy5" target="_blank">
+                        <div>{{ i18nLabels.clickForDirections | translate }}</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="row my-3">
+            <div class="col-sm-12">
+                <h3>~~~ {{ i18nLabels.mosalPaksh | translate }} ~~~</h3>
+            </div>
+            <div class="col-sm-6">
+                <h5>{{ i18nLabels.natvarlal | translate }}</h5>
+            </div>
+            <div class="col-sm-6">
+                <h5>{{ i18nLabels.svIlaBen | translate }}</h5>
+            </div>
+        </div> -->
+        <div class="row my-3">
+            <div class="col-sm-12 my-3">
+                <h5 class="border-box" [innerHTML]="i18nLabels.savant1May | translate" ></h5>
+            </div>
+            <div class="col-sm-3 offset-sm-3 my-3">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.jaanPrasthan | translate }}</h5>
+            </div>
+            <div class="col-sm-3 my-3">
+                <h5 class="border-box pre-line-text">{{ i18nLabels.hastMelap | translate }}</h5>
+            </div>
+            <div class="col-sm-12 my-3 border-box">
+                <h5 class="pre-line-text">{{ i18nLabels.venue | translate }}</h5>
+                <h4>{{ i18nLabels.damodarWadi | translate }}</h4>
+                <h4>{{ i18nLabels.ashokNagar | translate }}</h4>
+                <a class="u my-1" href="https://maps.app.goo.gl/jkqGjUc2i17r7ApJA" target="_blank">
+                    <div>{{ i18nLabels.clickForDirections | translate }}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="fade-in" [ngClass]="{'show': !isparrallaxVisible}">
         
         <h1 class="my-3" >
             <span>{{ i18nLabels.lookingForward | translate }}</span>
@@ -134,17 +232,17 @@
         </a></h3>
 
         
-    </div>
+    </div> -->
     <div class="txt">
-        <h1 class="bold my-3">
-            <span>{{ i18nLabels.thingsToKnow | translate }}</span>
-
-        </h1>
-        <h3 class="my-3">
-            <span>{{ i18nLabels.toHelpYouAtEase | translate }}</span>
-        </h3>
         <div class="container">
-            <div class="row">
+            <div class="row" *ngIf="gujLang !== selectedlanguage">
+                <h1 class="bold my-3">
+                    <span>{{ i18nLabels.thingsToKnow | translate }}</span>
+
+                </h1>
+                <h3 class="my-3">
+                    <span>{{ i18nLabels.toHelpYouAtEase | translate }}</span>
+                </h3>
                 <div class="col-sm-12 hashtag">
                     <h1 class="bold mb-3">
                         <span>{{ i18nLabels.hashtag | translate }}</span>

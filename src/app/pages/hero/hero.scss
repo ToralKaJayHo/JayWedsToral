@@ -91,7 +91,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 15% 0;
+  padding: 5% 0;
   
   .hashtag {
     justify-items: center;
@@ -109,6 +109,25 @@
     padding: 7%;
     border-radius: 30% 0;
     text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0
+  }
+  .border-box {
+    border: 4px double #c1aea7;
+    border-radius: 40px;
+    align-items: center;
+    padding: 5px 30px;
+    margin: 1%;
+  }
+  .pre-line-text {
+    white-space: pre-line;
+    text-align: center;
+    font-weight: 600;
+    a {
+      font-weight: normal;
+    }
   }
 }
 

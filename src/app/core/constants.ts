@@ -41,8 +41,30 @@ export class Constants {
     hashtag: 'hashtag',
     whilePostingPhotos: 'whilePostingPhotos',
     hashtagValue: 'hashtagValue',
-    ourFamiliesAreExcitedTo: 'ourFamiliesAreExcitedTo'
+    ourFamiliesAreExcitedTo: 'ourFamiliesAreExcitedTo',
+    shreeGaneshayNamah: 'shreeGaneshayNamah',
+    jayShreeKrishna: 'jayShreeKrishna',
+    shreePithadMaa: 'shreePithadMaa',
+    riddhiSiddhiSahit: 'riddhiSiddhiSahit',
+    sahkutumbPadharjo: 'sahkutumbPadharjo',
+    manglikPrasango: 'manglikPrasango',
+    savant208230AprNaRoj: 'savant208230AprNaRoj',
+    randalMaaPooja: 'randalMaaPooja',
+    ganeshSthapna: 'ganeshSthapna',
+    mandapMuhrat: 'mandapMuhrat',
+    svaruvhiPhojan: 'svaruvhiPhojan',
+    mameru: 'mameru',
+    haldiPithi: 'haldiPithi',
+    sangeetSandhya: 'sangeetSandhya',
+    shubhSthalSaiMandirHall: 'shubhSthalSaiMandirHall',
+    mosalPaksh: 'mosalPaksh',
+    natvarlal: 'natvarlal',
+    svIlaBen: 'svIlaBen',
+    savant1May: 'savant1May',
+    jaanPrasthan: 'jaanPrasthan',
+    hastMelap: 'hastMelap'
 };
-  public static readonly allowedLangs = ['en', 'hin', 'guj'];
+  public static readonly guj = 'guj';
+  public static readonly allowedLangs = ['en', 'hin', this.guj];
 
 }
