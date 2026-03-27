@@ -50,19 +50,29 @@ export class Constants {
     manglikPrasango: 'manglikPrasango',
     savant208230AprNaRoj: 'savant208230AprNaRoj',
     randalMaaPooja: 'randalMaaPooja',
+    randalMaaTime: 'randalMaaTime',
     ganeshSthapna: 'ganeshSthapna',
+    ganeshSthapnaTime: 'ganeshSthapnaTime',
     mandapMuhrat: 'mandapMuhrat',
-    svaruvhiPhojan: 'svaruvhiPhojan',
+    mandapMuhratTime: 'mandapMuhratTime',
+    svaruchiBhojan: 'svaruchiBhojan',
+    svaruchiBhojanTime: 'svaruchiBhojanTime',
     mameru: 'mameru',
+    mameruTime: 'mameruTime',
     haldiPithi: 'haldiPithi',
+    haldiPithiTime: 'haldiPithiTime',
     sangeetSandhya: 'sangeetSandhya',
+    sangeetSandhyaTime: 'sangeetSandhyaTime',
     shubhSthalSaiMandirHall: 'shubhSthalSaiMandirHall',
+    shubhSthalSaiMandirHallTime: 'shubhSthalSaiMandirHallTime',
     mosalPaksh: 'mosalPaksh',
     natvarlal: 'natvarlal',
     svIlaBen: 'svIlaBen',
     savant1May: 'savant1May',
     jaanPrasthan: 'jaanPrasthan',
-    hastMelap: 'hastMelap'
+    jaanPrasthanTime: 'jaanPrasthanTime',
+    hastMelap: 'hastMelap',
+    hastMelapTime: 'hastMelapTime'
 };
   public static readonly guj = 'guj';
   public static readonly allowedLangs = ['en', 'hin', this.guj];
